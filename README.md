@@ -7,6 +7,8 @@ This is a project hotel dashboard consisting of a Python (FastAPI) backend and a
 
 This application runs on **http://localhost:5173**
 
+(backend on **http://localhost:8000/rooms**)
+
 ### Backend
 
 **Going to the backend directory:**
