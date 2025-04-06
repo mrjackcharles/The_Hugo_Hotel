@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App.jsx";
 import CreateRoom from "./pages/createRoom.jsx";
 import UpdateRoom from "./pages/updateRoom.jsx";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
 
 const router = createBrowserRouter([
     { path: "/", element: <Navigate to="/rooms" replace /> },
