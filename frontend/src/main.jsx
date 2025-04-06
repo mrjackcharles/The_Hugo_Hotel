@@ -7,6 +7,7 @@ import UpdateRoom from "./pages/updateRoom.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
+    { path: "/", element: <Navigate to="/rooms" replace /> },
     { path: "/rooms", element: <App /> },
     { path: "/create-room", element: <CreateRoom /> },
     { path: "/update-room/:roomId", element: <UpdateRoom /> },
