@@ -11,6 +11,7 @@ const router = createBrowserRouter([
     { path: "/rooms", element: <App /> },
     { path: "/create-room", element: <CreateRoom /> },
     { path: "/update-room/:roomId", element: <UpdateRoom /> },
+    { path: "*", element: <Navigate to="/rooms" replace /> },
 ]);
 
 createRoot(document.getElementById("root")).render(
