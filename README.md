@@ -3,6 +3,8 @@
 
 This is a project hotel dashboard consisting of a Python (FastAPI) backend and a JavaScript (React) frontend with an in-memory DB.
 
+(vite, axios, uvicorn)
+
 ## Installation Guide
 
 This application runs on **http://localhost:5173**
