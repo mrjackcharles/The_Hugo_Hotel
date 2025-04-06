@@ -1,10 +1,11 @@
 
-# The_Hugo_Hotel
+# The Hugo Hotel
 
 This is a project hotel dashboard consisting of a Python (FastAPI) backend and a JavaScript (React) frontend with an in-memory DB.
 
-## Installation Guide  
+## Installation Guide
 
+This application runs on **http://localhost:5173**
 
 ### Backend
 
@@ -59,5 +60,12 @@ npm run dev
 - More options for navigation
 - Slightly cleaner code
 
+## Routes
+
+```
+/rooms
+/create-room
+/update-room{roomId}
+```
 
 
