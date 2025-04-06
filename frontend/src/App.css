@@ -1,0 +1,324 @@
+html,
+body {
+    color: #3b3b3b;
+    background-color: #ffffff;
+    font-family: "Merriweather", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+div {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.form-titles {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    font-family: "Karla", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.sub-heading {
+    font-family: "Karla", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.side-nav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #3b3b3b;
+    padding-top: 20px;
+}
+
+.side-nav a {
+    position: relative;
+    padding-left: 20px;
+    height: 24px;
+    font-family: "Karla", sans-serif;
+    font-size: 14px;
+    color: white;
+    display: block;
+    margin-top: 20px;
+}
+
+.side-nav a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #ff5757;
+}
+
+.flex-container {
+    display: grid;
+}
+
+.roomdetails-container {
+    margin-top: 20px;
+    margin-left: 220px;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: calc(100% - 200px);
+    overflow-y: auto;
+}
+
+.roomlist-container {
+    margin-left: 200px;
+    position: fixed;
+    padding: 20px;
+    top: 0;
+    height: 100%;
+    width: calc(100% - 200px);
+}
+
+.create-button1 {
+    background-color: #ff5757;
+    margin: 20px;
+    border-radius: 0;
+    display: block;
+    margin-left: 0px;
+}
+
+.create-button1 a {
+    color: white;
+    font-family: "Karla", sans-serif;
+}
+
+.create-button2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #ff5757;
+    margin: 20px;
+    border-radius: 0;
+}
+
+.create-button2 a {
+    color: white;
+    font-family: "Karla", sans-serif;
+}
+
+.back-link {
+    color: #ff5757;
+    font-family: "Marriweather", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.page-header {
+    margin: 0;
+    width: 512px;
+    font-family: "Karla", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-left: 2px;
+}
+
+.room-table {
+    border-collapse: collapse;
+    margin-top: 40px;
+    font-family: "Merriweather", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.room-table th,
+.room-table td {
+    padding: 8px;
+    text-align: left;
+}
+
+.room-table th {
+    font-weight: bold;
+}
+
+.room-table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.room-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.input-box {
+    width: 629px;
+    height: 44px;
+    padding: 20px;
+    font-size: 13px;
+    border: 1px solid #e5e7eb;
+    background-color: #e5e7eb;
+    color: #3b3b3b;
+    border-radius: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+.dates-section {
+    margin-top: 110px;
+    padding: 10px;
+    border-radius: 0px;
+    background-color: #bfb8b0;
+    font-family: "Karla", sans-serif;
+    width: 395px;
+    height: 153px;
+    right: 0;
+    position: fixed;
+    margin-right: 20px;
+}
+
+.dates-section h3 {
+    font-family: "Karla", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0px;
+    margin: 0px;
+}
+
+.dates {
+    font-family: "Merriweather", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.dates-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+.dates-table th {
+    padding: 0px;
+    text-align: left;
+    font-family: "Karla", sans-serif;
+    font-size: 14px;
+}
+
+.dates-table td {
+    padding: 0px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.clickable-row {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.clickable-row:hover {
+    background-color: #e5e7eb;
+}
+
+.file-upload::-webkit-file-upload-button {
+    display: none;
+}
+
+.file-upload::file-selector-button {
+    display: none; 
+}
+
+.file-upload-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.file-upload-label {
+    display: block;
+    color: #ff5757;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.file-upload {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(32, 10%, 72%, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background-color: #ffffff;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    border-radius: 0px;
+    text-align: left;
+    width: 454px;
+    height: 225px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.confirm-button {
+    background-color: #ff5757;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0px;
+    font-family: "Karla", sans-serif;
+    font-size: 18px;
+    width: 160px;
+    height: 50px;
+}
+
+.cancel-button {
+    background-color: #3b3b3b;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0px;
+    font-family: "Karla", sans-serif;
+    font-size: 18px;
+    width: 200px;
+    height: 50px;
+}
+
+.delete-heading {
+    font-family: "Karla", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    padding-left: 32px;
+}
+
+.delete-subheading {
+    font-family: "Merriweather", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 32px;
+}
