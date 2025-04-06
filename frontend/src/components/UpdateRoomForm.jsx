@@ -102,12 +102,7 @@ const UpdateRoomForm = () => {
                     <button
                         type="button"
                         className="create-button1"
-                        style={{
-                            marginTop: "50px",
-                            marginRight: "40px",
-                            position: "Fixed",
-                            left: "1025px",
-                        }}
+                        style={{ marginTop: "50px" }}
                         onClick={() => generatePDF(room)}
                     >
                         DOWNLOAD PDF
