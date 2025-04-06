@@ -9,6 +9,8 @@ This application runs on **http://localhost:5173**
 
 (backend on **http://localhost:8000/rooms**)
 
+---
+
 ### Backend
 
 **Going to the backend directory:**
@@ -62,7 +64,7 @@ npm run dev
 - More options for navigation
 - Slightly cleaner code
 
-## Routes
+### Routes
 
 ```
 /rooms
